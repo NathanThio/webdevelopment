@@ -1,0 +1,39 @@
+td {
+    padding:10px;
+}
+th {
+    font-variant: all-small-caps;
+    font-size: 20px;
+}
+img {
+    width: 70px;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+h2 {
+    font-style: italic;
+}
+.interesse, .foto {
+    float: left;
+    padding-left: 10px;
+}
+.foto {
+    width:100px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+}
+li {
+    display: inline;
+    margin:5px;
+}
