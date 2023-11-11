@@ -1,0 +1,28 @@
+table {
+    margin: 100px;
+    border: 3px black solid;
+    border-collapse: collapse;
+}
+th {
+    font-size: 20px;
+    background-color: rgb(170,170,200)
+}
+td {
+    border: 1px black dotted;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+#dag {
+    background-color: rgb(35,37,70);
+    color: rgb(200,190,240);
+}
+#vrijeDag {
+    background-color: rgb(250,120,120);
+}
+tbody > tr > :first-child:not(.andereMaand), tbody > tr > :last-child:not(.andereMaand) {
+    background-color: rgb(255, 220, 220);
+}
+.andereMaand {
+    background-color: #969595;
+    color: #7a7979;
+}
