@@ -1,0 +1,22 @@
+body {
+    font-size: 1.25em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.even {
+    float: right;
+}
+
+.oneven {
+    float: left;
+}
+
+article {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+img, h2, p {
+    margin: 10px;
+}
