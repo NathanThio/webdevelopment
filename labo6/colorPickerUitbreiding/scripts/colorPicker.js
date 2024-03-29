@@ -6,10 +6,8 @@ const setup = () => {
     sliders[1].addEventListener("input",update);
     sliders[2].addEventListener("change",update);
     sliders[2].addEventListener("input",update);
-    let colorBox = document.getElementById("colorBox");
-    colorBox[0].addEventListener("change",update);
-    colorBox[0].addEventListener("input",update);
-    colorBox.addEventListener("click",maakColorBox);
+    let knopSave = document.getElementById("saveButton");
+    knopSave.addEventListener("click",maakColorBox);
 }
 
 const update = () => {
@@ -32,7 +30,19 @@ const maakColorBox = () => {
     let box = document.createElement("div");
     box.id = "colorBox";
     box.style.backgroundColor = `rgb(${rood},${groen},${blauw})`;
+    let deleteColorBox = document.createElement("button");
+    deleteColorBox.id = "deleteColorBoxButton";
+    deleteColorBox.innerText = "X";
+    deleteColorBox.addEventListener("click", () => {
+        verwijderColorBox(box);
+    });
+    box.appendChild(deleteColorBox);
     document.querySelector("#colorBoxList").appendChild(box);
+}
+
+const verwijderColorBox = (colorBox) => {
+    let box = document.querySelector("#colorBoxList");
+    box.removeChild(colorBox);
 }
 
 window.addEventListener("load", setup);

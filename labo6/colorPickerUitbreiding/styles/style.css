@@ -2,16 +2,15 @@
     border:1px black solid;
     width:70px;
     height:70px;
-    position: absolute;
-    top: 1%;
-    left: 17%;
     background-color: rgb(128,128,128);
+    margin: 5px;
 }
 
 .kleurLabel {
     margin-left: 10px;
 }
 
-ul {
-    display: inline-block;
+#colorBoxList {
+    display: flex;
+    flex-wrap: wrap;
 }
