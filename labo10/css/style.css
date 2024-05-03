@@ -1,0 +1,50 @@
+#container {
+    margin: 0 auto;
+    width: 60%;
+    font-family: sans-serif, arial;
+}
+
+#commandoInput {
+    width: 100%;
+    height: 30px;
+    font-size: 110%;
+}
+
+#infoCommando {
+    color: grey;
+    margin: 0;
+    font-size: 80%;
+}
+
+#goButton {
+    background-color: green;
+    color: white;
+    width: 100%;
+    height: 50px;
+    font-size: 130%;
+    margin: 20px 0;
+    border-radius: .25rem;
+    border: none;
+}
+
+#goButton:hover {
+    background-color: darkgreen;
+}
+
+#history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
